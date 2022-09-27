@@ -1,0 +1,36 @@
+// Silde
+.app {
+  row-gap: 24px;
+  min-height: calc(100vh - 87.78px - 112.44px);
+  .slide-user {
+    background-color: $light-color;
+    height: 100%;
+    font-weight: bold;
+    .card-slide {
+      box-shadow: 0px 8px 10px 0 #00968314;
+      padding:1.5rem 1rem;
+      text-align: center;
+      .img-user {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        // box-shadow: 0px 15px 20px 0 #00968314;
+        margin-bottom: 16px;
+        margin-top: 10px;
+        object-fit: cover;
+      }
+      .badge-info {
+        margin:  0 auto;
+        min-width: 150px;
+        margin-bottom: 10px;
+      }
+      .btn-more-lg {
+        margin:  0 auto;
+        min-width: 150px;
+      }
+    }
+  }
+  .app-content {
+    margin-bottom: 3rem;
+  }
+}

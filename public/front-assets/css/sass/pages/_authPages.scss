@@ -1,0 +1,179 @@
+// Start Login And Reseat
+.section-login {
+    .box-login {
+        padding: 20px;
+        background-color: $light-color;
+        border-radius: 20px;
+        width: 100%;
+        box-shadow: $shadow-green;
+        max-width: 400px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .img-login {
+        max-height: 360px;
+    }
+    .set-id-code {
+        .inp-code {
+            border: 1px solid #c6c5c5;
+            color: #009080;
+            font-size: 23px;
+        }
+    }
+    .btn-resend {
+        display: none;
+    }
+}
+// End Login And Reseat
+
+// Start register
+.section-register {
+
+    .card-user{
+    padding: 20px;
+    position: relative;
+    transition: $transition;
+    border-radius: 20px;
+    min-height: 500px;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    background-color: rgba(255, 255, 255, 0.699);
+    cursor: pointer;
+    &:hover {
+        background-color: white;
+    }
+    .logo-icon {
+        width: 63px;
+        margin-bottom: 20px;
+        z-index: 1;
+        position: relative;
+    }
+    .inp-hidd{
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        cursor: pointer;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .title {
+        font-size: 25px;
+        font-weight: bold;
+        color: $green-color;
+        transition: 300ms;
+    }
+    &.active {
+    background-color: $green-color;
+        .title {
+            color:white;
+        }
+    }
+    .group-type-user {
+        margin: 0 auto;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: fit-content;
+        .card-type-user {
+            height: 50px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+        box-shadow: 0 0 10px 0 rgb(68 68 68 / 10%);
+        transition:300ms;
+        background-color: white;
+        cursor: pointer;
+        -webkit-transition:300ms;
+        color: $green-color;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 16px;
+        -moz-transition:300ms;
+        -ms-transition:300ms;
+        -o-transition:300ms;
+        position: relative;
+        &.active {
+            background-color: #beffdd;
+        }
+    }
+}
+}
+.next_btn {
+    width: 140px;
+    background-color: #148b7e;
+    color: white;
+    transition: $transition;
+    &:hover {
+        background-color: #117e72;
+    }
+}
+.content-step-2 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    .bar-type-user {
+        color: #00907f70;
+        font-weight: bold;
+        font-size: 20px;
+        .title-type-user {
+            &.active {
+                color: $green-color;
+            }
+        }
+
+    }
+    .box-register {
+       padding: 2rem 5rem;
+       background-color: white;
+       border-radius: 20px;
+       width: 100%;
+       -webkit-box-shadow: 15px 15px 20px 0 rgb(0 150 131 / 8%);
+       box-shadow: 15px 15px 20px 0 rgb(0 150 131 / 8%);
+       -webkit-border-radius: 20px;
+       margin-top: 2rem;
+       -moz-border-radius: 20px;
+       -ms-border-radius: 20px;
+       -o-border-radius: 20px;
+       label {
+        color: $text-color-dark;
+        font-size: 15px;
+        margin-bottom: 2px;
+        font-weight: bold;
+       }
+       .form-control {
+        border: 1px solid $green-color !important;
+        &:focus {
+            border: 1px solid $green-color !important;
+            box-shadow: unset !important;
+        }
+    }
+    .group-cheack {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        color: $text-color-dark;
+    }
+   }
+}
+.submit {
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 0.5rem 2rem;
+    background-color: $green-color;
+
+}
+}
+// End Login

@@ -1,0 +1,50 @@
+body {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    background-color: $section-color;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    color: $dark-color;
+}
+// All Rest
+* {
+    @include all-reset;
+}
+// a Reset
+a {
+    @include a-reset;
+}
+// reset btn
+button {
+    border: none;
+    outline: none;
+}
+// reset input
+input:focus,select:focus {
+  outline: none;
+}
+// heights-section
+.height-section {
+    min-height: calc(100vh - 87.78px - 151px);
+}
+.height-section-footer {
+    min-height: calc(100vh - 151px);
+}
+// Modal
+.modal-header {
+    .modal-title {
+        font-size: 15px !important;
+    }
+    .btn-close {
+        margin: unset !important;
+    }
+}
+
+/*remove arrow inout number*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]{
+  -moz-appearance: textfield;
+}
